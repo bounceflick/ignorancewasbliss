@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require_relative 'config/application'
 # require_relative 'app/controllers/Controller.rb'
 
