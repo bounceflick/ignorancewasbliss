@@ -1,8 +1,3 @@
-require_relative '../views/view.rb'
-require_relative '../models/list.rb'
-require_relative '../models/task.rb'
-
-
 class Controller
   # def initialize(input)
   #   @command, @subcommand = ARGV[0].split(":")
@@ -94,12 +89,12 @@ class Controller
 
   def self.help(_)
     help_message =
-    %{- list (all lists)
-      - list <<list number>: <item number>> (list number)
-      - filter:<tag>
-      - tag:<tag>
-      - delete <<list number>: <item number>>
-      - add <list number> message}
+    %{Ignorance Was Bliss - What you never wanted to know about where you eat...
+      - list top 10 (list top 10 restaurants by rating)
+      - list bottom 10 (list bottom 10 restuarants by rating)
+      ----------UNIMPLEMENTED---------------------------------
+      -
+    }
     @view.help(help_message)
   end
 
