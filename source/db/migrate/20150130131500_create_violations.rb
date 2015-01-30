@@ -1,12 +1,12 @@
-require_relative '../config'
+require_relative '../../config/application'
 
-class CreateViolations > ActiveRecord::Migration
+class CreateViolations < ActiveRecord::Migration
 	def change
 		create_table   :violations do |t|
 			t.integer  :restaurant_id
 			t.date     :inspection_date
 			t.string   :description
-			
+
 			t.timestamps
 		end
 	end
